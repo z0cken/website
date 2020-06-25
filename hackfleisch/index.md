@@ -12,8 +12,9 @@
 # Minecraft Server
 
 **under construction🛠**
-
-## Navigation
+<div id="sideMenu">
+	
+  ## Navigation
 
 - [Allgemien](#allgemein)
 - [Weltaufbau](#weltaufbau)
@@ -46,6 +47,12 @@
 - [Regeln](#regeln)
 - [Ansprechpartner](#ansprechpartner)
 - [Links](#links)
+
+</div>
+
+<div id="mainContent">
+
+
 
 ## Allgemein
 
@@ -186,3 +193,6 @@ Serverleitung:
 - [Discord](https://discord.gg/F2EeJFY)
 - [Website](https://z0cken.com/)
 - [Weltkarte](https://3rbgut.de/serverkarte/)
+
+
+</div>
