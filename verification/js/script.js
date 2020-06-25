@@ -3,7 +3,7 @@ var discordLink =
 var programmLink = "https://pr0gramm.com/auth?clientId=1234&state=#";
 
 var discordToken;
-var discordTokenType = "Bearer";
+var discordTokenType;
 
 var proClientID;
 var proAuthCode;
@@ -14,6 +14,7 @@ window.onload = function () {
   var url_string = window.location.href.replace("#", "?");
   var url = new URL(url_string);
   discordToken = url.searchParams.get("access_token");
+  discordTokenType = url.searchParams.get("token_type");
   proAuthCode = url.searchParams.get("authCode");
   proUserId = url.searchParams.get("userID");
   setStates(url.searchParams.get("state"));
@@ -25,7 +26,7 @@ function setButtons() {
     var btn = document.getElementById("dcButton");
     btn.classList.add("disabled");
     btn.classList.remove("pulse");
-    btn.innerHTML = "Verifiziert als " + getDiscordName();;
+    setDiscordName();
   }
 
   if (proAuthCode && proUserId) {
@@ -36,6 +37,7 @@ function setButtons() {
   }
 
   if (proAuthCode && proUserId && discordToken) {
+    //Send to Bot
   }
   document.getElementById("dcButton").href = discordLink.replace(
     "#",
@@ -59,6 +61,9 @@ function setState(value, index, array) {
   if (pairs[0].equals("dct") && !discordToken) {
     discordToken = pairs[1];
   }
+  if (pairs[0].equals("dctt") && !discordTokenType) {
+    discordTokenType = pairs[1];
+  }
   if (pairs[0].equals("pac") && !proAuthCode) {
     proAuthCode = pairs[1];
   }
@@ -72,6 +77,9 @@ function getState() {
   if (discordToken) {
     state_string += "dct_" + discordToken + "-";
   }
+  if (discordTokenType) {
+    state_string += "dctt_" + discordTokenType + "-";
+  }
   if (proAuthCode) {
     state_string += "pac_" + proAuthCode + "-";
   }
@@ -81,7 +89,7 @@ function getState() {
   return state_string;
 }
 
-function getDiscordName() {
+function setDiscordName() {
   fetch("https://discordapp.com/api/users/@me", {
     headers: {
       authorization: `${discordTokenType} ${discordToken}`,
@@ -90,7 +98,10 @@ function getDiscordName() {
     .then((res) => res.json())
     .then((response) => {
       const { username, discriminator } = response;
-      return username;
+      document.getElementById("dcButton").innerHTML =
+        "Verifiziert als " + username;
     })
     .catch(console.error);
 }
+
+function setProgrammName() {}
