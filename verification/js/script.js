@@ -20,6 +20,19 @@ window.onload = function () {
 };
 
 function setLinks() {
+    if (discordToken) {
+        var btn = document.getElementById("dcButton")
+        btn.classList.add("disabled");
+        btn.classList.remove("pulse");
+        btn.innerHTML = "Verifiziert als " + discordToken
+    }
+
+    if (proAuthCode && proUserId) {
+        var btn = document.getElementById("proButton")
+        btn.classList.add("disabled");
+        btn.classList.remove("pulse");
+        btn.innerHTML = "Verifiziert als " + proUserId
+    }
     document.getElementById("dcButton").href = discordLink.replace("#",getState());
     document.getElementById("proButton").href = programmLink.replace("#",getState());
 }
@@ -33,23 +46,16 @@ function setStates(string) {
 
 function setState(value, index, array) {
     var pairs = value.split("_");
-    if (pairs[0].equals("dct")) {
+    if (pairs[0].equals("dct") && !discordToken) {
         discordToken = pairs[1];
     }
-    if (pairs[0].equals("pac")) {
+    if (pairs[0].equals("pac") && !proAuthCode) {
         proAuthCode = pairs[1];
     }
-    if (pairs[0].equals("puid")) {
+    if (pairs[0].equals("puid") && !proUserId) {
         proUserId = pairs[1];
     }
 
-    if (discordToken) {
-        document.getElementById("dcButton").classList.add("disabled");
-    }
-
-    if (proAuthCode && proUserId) {
-        document.getElementById("proButton").classList.add("disabled");
-    }
 }
 
 function getState() {
