@@ -10,15 +10,13 @@ var proUserId;
 var proName;
 
 window.onload = function () {
-  var url_string = window.location.href;
+  var url_string = window.location.href.replace("#","?");
   var url = new URL(url_string);
   discordToken = url.searchParams.get("access_token");
   proAuthCode = url.searchParams.get("authCode");
   proUserId = url.searchParams.get("userID");
   setStates(url.searchParams.get("state"));
-
   setLinks();
-  console.log("ready");
 };
 
 function setLinks() {
