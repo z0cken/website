@@ -22,18 +22,23 @@ window.onload = function () {
 };
 
 function setButtons() {
+  var btn = document.getElementById("dcButton");
   if (discordToken) {
-    var btn = document.getElementById("dcButton");
-    btn.classList.add("disabled");
-    btn.classList.remove("pulse");
     setDiscordName();
+  } else {
+    btn.classList.remove("disabled");
+    btn.classList.add("pulse");
+    btn.innerHTML = "Login";
   }
-
+  btn = document.getElementById("proButton");
   if (proAuthCode && proUserId) {
-    var btn = document.getElementById("proButton");
     btn.classList.add("disabled");
     btn.classList.remove("pulse");
     btn.innerHTML = "Verifiziert!";
+  } else {
+    btn.classList.remove("disabled");
+    btn.classList.add("pulse");
+    btn.innerHTML = "Login";
   }
 
   if (proAuthCode && proUserId && discordToken) {

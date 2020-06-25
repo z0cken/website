@@ -27,19 +27,16 @@
     />
   </head>
 
-
-  <body class="background-gray"> 
+  <body class="background-gray">
     <nav class="background-orange" role="navigation">
       <div class="nav-wrapper container s12">
         <a id="logo-container" href="https://www.z0cken.com" class="brand-logo">
           <img class="responsive-img" width="70" src="./resources/z0cken.png" />
         </a>
         <ul class="right hide-on-med-and-down">
-          <div class="tab">Version 1.4</div> 
+          <div class="tab">Version 1.5</div>
         </ul>
-        
       </div>
-      
     </nav>
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
@@ -68,12 +65,17 @@
                   </div>
                   <div class="card-action">
                     <button
-                      class="btn pulse background-orange waves-effect waves-light"
+                      large
+                      class="btn disabled background-orange waves-effect waves-light"
                       type="submit"
                       name="action"
                       id="proButton"
                     >
-                      Login
+                      Lade...
+
+                      <div id="proLoad" class="progress">
+                        <div class="indeterminate"></div>
+                      </div>
                     </button>
                   </div>
                 </div>
@@ -91,12 +93,12 @@
                   </div>
                   <div class="card-action center">
                     <a
-                      class="btn pulse background-orange waves-effect waves-light"
+                      class="btn disabled background-orange waves-effect waves-light"
                       type="submit"
                       name="action"
                       id="dcButton"
                     >
-                      Login
+                      Lade...
                     </a>
                   </div>
                 </div>
