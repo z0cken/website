@@ -10,15 +10,15 @@
 }
 </style> 
 
-# Wilkommen auf z0cken.com
+# Startseite
 
 **under construction🛠**
 
 ## Navigation
 
   - Projekte
-    - [Events](#Events)
-    - [Minecraft](#Minecraft)
+    - [Events](#events)
+    - [Minecraft](#minecraft)
 
 ## Projekte
 

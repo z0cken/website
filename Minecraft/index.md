@@ -9,21 +9,50 @@
     background-color: #161618;
 }
 </style> 
-# z0cken.com | Minecraft Server
+# Minecraft Server
 
 **under construction🛠**
 
 ## Navigation
 
- - [Allgemien](#Allgemein)
- - [Konzept](#Konzept)
+- [Allgemien](#allgemein)
+- [Weltaufbau](#weltaufbau)
+  - [Städte](#städte)
+  - [Themendörfer](#themendörfer)
+  - [Grundstücke](#grundstücke)
+  - [Steinbruch und Baggersee](#steinbruch-und-baggersee)
+  - [Freebuild](#freebuild)
+  - [Claims](#claims)
+  - [Metro](#metro)
+- [Welten](#welten)
+  - [Nether](#nether)
+  - [End](#end)
+  - [Farmwelt](#farmwelt)
+- [Features](#features)
+  - [Skills](#skills)
+  - [Skilltage](#skilltage)
+  - [Homes](#homes)
+  - [Musiktickets](#musiktickets)
+  - [Hartgeld](#hartgeld)
+  - [Enderaugen](#enderaugen)
+  - [XP-Flaschen](#xp-flaschen)
+- [Quests](#Quests)
+- [Handel](#handel)
+  - [Servershops](#servershops)
+  - [Spielershops](#spielershops)
+- [Verkehrsnetze](#verkehrsnetze)
+  - [Straßen](#straßen)
+  - [Bahn](#bahn)
+- [Regeln](#regeln)
+- [Ansprechpartner](#ansprechpartner)
+- [Links](#links)
 
 ## Allgemein
 
 - Version: 1.15.2
 - Adresse: `mc.z0cken.com`
 
-## Kartenaufbau
+## Weltaufbau
 
 ### Städte
 
@@ -58,16 +87,6 @@ Für eine Metromap, nimmst du eine Karte in die Hand und führst den Befehl /met
 /metro zeigt dir den Status der Metro an
 /metro top zeigt die besten Spieler der Metro a. 
 
-## Skills
-
-Das MCMMO Plugin fügt Skills ein. Umso mehr ihr spielt umso besser werden eure Skills. Mit steigendem Skill verbessern sich eure Fähigkeiten.
-Mit /mcstats werden dir deine Skills angezeigt. Mit /akrobatik wird dir dein Akrobatik Skill angezeigt.
-/Mctop zeigt dir die Top Spieler
-Mit einem Linksklick (bzw. Schleichen + Linksklick wenn du ein Item in der zweiten Hand hast) und dem passenden Werkzeug aktivierst du dein Spezialskill.
-Liste aller Skills:
-Akrobatik, Schwertkampf, Axtkampf, Faustkampf, Bogenschießen, Kräuterkunde, Angeln, Graben, Bergbau
-
-
 ## Welten
 
 ### Nether
@@ -79,8 +98,20 @@ Der Enderdrache lässt sich immer wieder neu spawnen. Das End wird je nach Bedar
 Die Farmwelt wird zurückgesetzt und erweitert. Hier kann nicht geclaimt werden und auch kein Home gesetzt werden.
 
 ## Features
+
+
 ### Homes
 Du startest mit einem Home. Du setzt es mit /sethome “Name” und löscht es mit /delhome “Name”. Bei Günther im Rathaus kannst du per Quest mehr Homes erhalten. Homes sind nur in der Overworld verfügbar.
+
+### Skills
+
+Das MCMMO Plugin fügt Skills ein. Umso mehr ihr spielt umso besser werden eure Skills. Mit steigendem Skill verbessern sich eure Fähigkeiten.
+Mit /mcstats werden dir deine Skills angezeigt. Mit /akrobatik wird dir dein Akrobatik Skill angezeigt.
+/Mctop zeigt dir die Top Spieler
+Mit einem Linksklick (bzw. Schleichen + Linksklick wenn du ein Item in der zweiten Hand hast) und dem passenden Werkzeug aktivierst du dein Spezialskill.
+Liste aller Skills:
+Akrobatik, Schwertkampf, Axtkampf, Faustkampf, Bogenschießen, Kräuterkunde, Angeln, Graben, Bergbau
+
 ### Musiktickets
 Es gibt 13 verschiedene Musiktickets die du angeln kannst. Um Musik zu hören, nimmst du es in die Hand und dann Rechtsklick auf eine Jukebox.
 ### Hartgeld
@@ -102,7 +133,7 @@ Liste aller Quests:
 - Fischerdorf: Rebron der Fischer, den Tod, Edmund van Dickinson und sein Kollege Oswald, Tjark der Fischverkäufter, den gierigen Händler Gibmir al Deingeld und den Schmied Rebron
 - Im Farmer- und Jägerdorf gibt es noch keine Quests.
 
-## Shops
+## Handel
 
 ### Servershops
 In allen Themendörfer findest du Dorfbewohner die jegliche Items mit dir unbegrent Handeln.
@@ -110,22 +141,7 @@ In allen Themendörfer findest du Dorfbewohner die jegliche Items mit dir unbegr
 Jeder Spieler kann, sofern er ein Villager-Spawnei besitzt, einen Shop am Marktplatz in Gamberg oder Erbgut spawnen. Dieses Spawnei erklärt sich selbst sobald du es in der Hand hast. Diese Spawneier erhaltet ihr bei Events. Dein Shop löscht sich automatisch nach 40 Tagen Inaktivität und deine Kiste mit Loot wird für andere Spieler freigegeben.
 Per Rechtsklick auf eine Kiste mit dem Villager-Spawnei erstellst du den Shop und mit Schleichen + Rechtsklick lässt sich dein Shop konfigurieren.
 
-## Skilltage
 
-Beim Portalhaus am Spawn werden dir die täglichen Skills angezeigt
-Je nach Skilltag werden 2 Skills geboosted. Du erhälst also durch Leveln mehr XP und steigst schneller auf.
-
-Skilltage:
-
-|Tag | Skill 1 | Skill 2|
-|--- | --- | ---|
-|**Montag** | Akrobatik | Schwertkampf|
-|**Dienstag** | Angeln | Axtkampf|
-|**Mittwoch** | Bergbau | Bogenschießen|
-|**Donnerstag** | Kräuterkunde | Faustkampf|
-|**Freitag** | Graben | Akrobatik|
-|**Samstag** | Bergbau | Bogenschießen|
-|**Sonntag** | Angeln | Faustkampf|
 
 ## Verkehrsnetze
 
