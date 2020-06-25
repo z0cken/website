@@ -115,6 +115,23 @@ Mit einem Linksklick (bzw. Schleichen + Linksklick wenn du ein Item in der zweit
 Liste aller Skills:
 Akrobatik, Schwertkampf, Axtkampf, Faustkampf, Bogenschießen, Kräuterkunde, Angeln, Graben, Bergbau
 
+### Skilltage
+
+Beim Portalhaus am Spawn werden dir die täglichen Skills angezeigt
+Je nach Skilltag werden 2 Skills geboosted. Du erhälst also durch Leveln mehr XP und steigst schneller auf.
+
+Skilltage:
+
+|Tag | Skill 1 | Skill 2|
+|--- | --- | ---|
+|**Montag** | Akrobatik | Schwertkampf|
+|**Dienstag** | Angeln | Axtkampf|
+|**Mittwoch** | Bergbau | Bogenschießen|
+|**Donnerstag** | Kräuterkunde | Faustkampf|
+|**Freitag** | Graben | Akrobatik|
+|**Samstag** | Bergbau | Bogenschießen|
+|**Sonntag** | Angeln | Faustkampf|
+
 ### Musiktickets
 Es gibt 13 verschiedene Musiktickets die du angeln kannst. Um Musik zu hören, nimmst du es in die Hand und dann Rechtsklick auf eine Jukebox.
 ### Hartgeld
