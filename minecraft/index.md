@@ -12,7 +12,6 @@
 # Minecraft Server
 
 **under construction🛠**
-<div id="sideMenu">
 	
   ## Navigation
 
@@ -37,7 +36,7 @@
   - [Hartgeld](#hartgeld)
   - [Enderaugen](#enderaugen)
   - [XP-Flaschen](#xp-flaschen)
-- [Quests](#Quests)
+- [Quests](#quests)
 - [Handel](#handel)
   - [Servershops](#servershops)
   - [Spielershops](#spielershops)
@@ -48,9 +47,6 @@
 - [Ansprechpartner](#ansprechpartner)
 - [Links](#links)
 
-</div>
-
-<div id="mainContent">
 
 
 
@@ -193,6 +189,3 @@ Serverleitung:
 - [Discord](https://discord.gg/F2EeJFY)
 - [Website](https://z0cken.com/)
 - [Weltkarte](https://3rbgut.de/serverkarte/)
-
-
-</div>
