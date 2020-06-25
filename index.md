@@ -29,4 +29,4 @@
 
 ### Minecraft
 
-[Hier klicken](/minecraft)
+[Hier klicken](/website/minecraft)
