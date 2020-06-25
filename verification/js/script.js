@@ -8,7 +8,7 @@ var discordTokenType;
 var proClientID;
 var proAuthCode;
 var proUserId;
-var proName;
+var proName = "Name Placeholder";
 
 window.onload = function () {
   var url_string = window.location.href.replace("#", "?");
@@ -22,23 +22,21 @@ window.onload = function () {
 };
 
 function setButtons() {
-  var btn = document.getElementById("dcButton");
+  var dcbtn = document.getElementById("dcButton");
+  var probtn = btn = document.getElementById("proButton");
   if (discordToken) {
     setDiscordName();
   } else {
-    btn.classList.remove("disabled");
-    btn.classList.add("pulse");
-    btn.innerHTML = "Login";
+    dcbtn.classList.remove("disabled");
+    dcbtn.classList.add("pulse");
+    dcbtn.innerHTML = "Login";
   }
-  btn = document.getElementById("proButton");
   if (proAuthCode && proUserId) {
-    btn.classList.add("disabled");
-    btn.classList.remove("pulse");
-    btn.innerHTML = "Verifiziert!";
+    setProgrammName();
   } else {
-    btn.classList.remove("disabled");
-    btn.classList.add("pulse");
-    btn.innerHTML = "Login";
+    probtn.classList.remove("disabled");
+    probtn.classList.add("pulse");
+    probtn.innerHTML = "Login";
   }
 
   if (proAuthCode && proUserId && discordToken) {
@@ -109,4 +107,7 @@ function setDiscordName() {
     .catch(console.error);
 }
 
-function setProgrammName() {}
+function setProgrammName() {
+  document.getElementById("proButton").innerHTML =
+  "Verifiziert als " + proName;
+}
