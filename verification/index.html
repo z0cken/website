@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>z0cken verify</title>
+
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="../css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="../css/pr0grammStylesheet.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
+
+  <body class="background-gray">
+    <!-- Navbar -->
+    <nav class="background-orange" role="navigation">
+      <div class="nav-wrapper container">
+        <div class="row">
+          <!-- Remove in production! -->
+          <a href="" class="brand-logo version center"> - Version 0.8 - </a>
+          <a href="https://www.z0cken.com" class="brand-logo">
+            <img
+              class="hide-on-small-only"
+              height="70"
+              src="../resources/z0cken.png"
+            />
+            <img
+              class="hide-on-med-and-up"
+              height="62"
+              src="../resources/z0cken.png"
+            />
+          </a>
+          <ul id="nav-mobile" class="right">
+            <li>
+              <a href="https://www.z0cken.com/impressum" class="hoverable">
+                Impressum
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center text-primary">z0cken Verifikation</h1>
+        <div class="row center">
+          <h5 class="header col s12 text-secondary">
+            Bitte bestätige beide Accounts
+          </h5>
+        </div>
+        <br /><br />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col l6 s12 m6">
+            <div class="card center">
+              <div class="card-content">
+                <span class="card-title">
+                  <div>
+                    <img
+                      class="responsive-img circle"
+                      id="pro-avatar"
+                      width="50"
+                      src="../resources/pr0gramm.png"
+                    />
+                  </div>
+                  <div>
+                    pr0gramm
+                  </div>
+                </span>
+                <p>Verifiziere deinen pr0gramm Account</p>
+              </div>
+              <div class="card-action">
+                <button
+                  large
+                  class="btn disabled background-orange waves-effect waves-light"
+                  type="submit"
+                  name="action"
+                  id="pro-button"
+                >
+                  Lade...
+                  <div id="proLoad" class="progress">
+                    <div class="indeterminate"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l6 s12 m6">
+            <div class="card center">
+              <div class="card-content">
+                <span class="card-title">
+                  <div>
+                    <img
+                      class="responsive-img circle"
+                      id="dc-avatar"
+                      width="50"
+                      src="../resources/discord.png"
+                    />
+                  </div>
+                  <div>
+                    Discord
+                  </div>
+                </span>
+                <p id="dc-text">Verifiziere deinen Discord Account</p>
+              </div>
+              <div class="card-action center">
+                <a
+                  class="btn disabled background-orange waves-effect waves-light"
+                  type="submit"
+                  name="action"
+                  id="dc-button"
+                >
+                  Lade...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/verifyScript.js"></script>
+  </body>
+</html>
