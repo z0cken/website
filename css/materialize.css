@@ -23,6 +23,10 @@ nav .brand-logo.version {
   padding: 0;
 }
 
+.sidenav-overlay {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 /* End of Custom CSS */
 
 .materialize-red {
