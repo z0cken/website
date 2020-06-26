@@ -30,13 +30,30 @@
   <body class="background-gray">
     <nav class="background-orange" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="https://www.z0cken.com" class="brand-logo">
-          <img class="responsive-img" width="70" src="./resources/z0cken.png" />
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <div class="tab">Version 0.1</div>
-        </ul>
+        <div class="row">
+          <!-- Remove in production! -->
+          <a href="" class="brand-logo version center"> - Version 0.1 - </a>
+          <a
+            id="logo-container"
+            href="https://www.z0cken.com"
+            class="brand-logo"
+          >
+            <img
+              class="responsive-img"
+              width="70"
+              src="./resources/z0cken.png"
+            />
+          </a>
+          <ul id="nav-mobile" class="right">
+            <li>
+              <a href="https://www.z0cken.com/impressum" class="hoverable">
+                Impressum
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+      
     </nav>
 
     <!--  Scripts-->

@@ -4,7 +4,21 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
+/* Custom CSS */
 
+.no-shadows {
+  box-shadow: none!important;
+}
+
+nav .brand-logo.version {
+  position: absolute;
+  color: #ddd;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0;
+}
+
+/* End of Custom CSS */
 
 .materialize-red {
   background-color: #e51c23 !important;
