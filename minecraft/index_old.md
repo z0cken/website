@@ -13,7 +13,7 @@
 
 **under construction🛠**
 	
-  ## Navigation
+## Navigation
 
 - [Allgemien](#allgemein)
 - [Weltaufbau](#weltaufbau)
