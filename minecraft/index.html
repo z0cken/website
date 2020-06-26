@@ -1,26 +1,56 @@
-<html>
+<html lang="de-DE">
 
 <head>
+  <meta charset="UTF-8">
+  <!-- CSS  -->
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<link
+  href="../css/materialize.css"
+  type="text/css"
+  rel="stylesheet"
+  media="screen,projection"
+/>
+<link
+  href="../css/pr0grammStylesheet.css"
+  type="text/css"
+  rel="stylesheet"
+  media="screen,projection"
+/>
   <style>
+    header, main, footer {
+      padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+    
     a {
       color: #ee4d2e
     }
-
-    body {
-      font-family: sans-serif, Helvetica, Arial;
-      font-size: 14px;
-      color: #f2f5f4;
-      background-color: #161618;
+    p{
+      color: #f2f5f4
+    }
+    h1{
+      color: #f2f5f4
+    }
+    h2{
+      color: #f2f5f4
+    }
+    h3{
+      color: #f2f5f4
     }
   </style>
+  
 </head>
 
-<body>
-  <h1 id="minecraft-server">Minecraft Server</h1>
-  <p><strong>under construction🛠</strong></p>
-  <div class="sidenav">
-  <h2 id="navigation">Navigation</h2>
-  <ul>
+<body class="background-gray">
+  <ul class="sidenav sidenav-fixed"> 
     <li><a href="#allgemein">Allgemien</a></li>
     <li><a href="#weltaufbau">Weltaufbau</a>
       <ul>
@@ -68,8 +98,9 @@
     <li><a href="#ansprechpartner">Ansprechpartner</a></li>
     <li><a href="#links">Links</a></li>
   </ul>
-</div>
-<div class="main">
+<div class="container">
+  <h1 id="minecraft-server">Minecraft Server</h1>
+  <p><strong>under construction🛠</strong></p>
   <h2 id="allgemein">Allgemein</h2>
   <ul>
     <li>Version: 1.15.2</li>
@@ -262,6 +293,11 @@
     <li><a href="https://3rbgut.de/serverkarte/">Weltkarte</a></li>
   </ul>
 </div>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/verifyScript.js"></script>
 </body>
 
 </html>
