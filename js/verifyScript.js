@@ -103,9 +103,9 @@ function setDiscordName() {
     .then((res) => res.json())
     .then((response) => {
       const { id, username, discriminator, avatar } = response;
-      document.getElementById("dc-button").innerHTML =
-        "Verifiziert";
-      document.getElementById("dc-text").innerHTML =  "Registriert als " + username + "#" + discriminator + "."
+      document.getElementById("dc-button").innerHTML = "Verifiziert";
+      document.getElementById("dc-text").innerHTML =
+        "Registriert als " + username + "#" + discriminator + ".";
       document.getElementById("dc-avatar").src =
         "https://cdn.discordapp.com/avatars/" + id + "/" + avatar + ".png";
     })
