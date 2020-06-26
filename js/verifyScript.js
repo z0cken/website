@@ -19,7 +19,7 @@ window.onload = function () {
   proUserId = url.searchParams.get("userID");
   setStates(url.searchParams.get("state"));
   //Done extracting URL params
-  window.history.pushState({}, "z0cken Verify", '/');
+  window.history.pushState({}, "z0cken Verify", window.location.pathname);
   setButtons();
 };
 
