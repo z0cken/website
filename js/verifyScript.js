@@ -18,12 +18,14 @@ window.onload = function () {
   proAuthCode = url.searchParams.get("authCode");
   proUserId = url.searchParams.get("userID");
   setStates(url.searchParams.get("state"));
+  //Done extracting URL params
+  window.history.pushState({}, "z0cken Verify", '/');
   setButtons();
 };
 
 function setButtons() {
-  var dcbtn = document.getElementById("dcButton");
-  var probtn = btn = document.getElementById("proButton");
+  var dcbtn = document.getElementById("dc-button");
+  var probtn = (btn = document.getElementById("pro-button"));
   if (discordToken) {
     setDiscordName();
   } else {
@@ -42,11 +44,11 @@ function setButtons() {
   if (proAuthCode && proUserId && discordToken) {
     //Send to Bot
   }
-  document.getElementById("dcButton").href = discordLink.replace(
+  document.getElementById("dc-button").href = discordLink.replace(
     "#",
     getState()
   );
-  document.getElementById("proButton").href = programmLink.replace(
+  document.getElementById("pro-button").href = programmLink.replace(
     "#",
     getState()
   );
@@ -100,14 +102,16 @@ function setDiscordName() {
   })
     .then((res) => res.json())
     .then((response) => {
-      const { username, discriminator } = response;
-      document.getElementById("dcButton").innerHTML =
-        "Verifiziert als " + username;
+      const { id, username, discriminator, avatar } = response;
+      document.getElementById("dc-button").innerHTML =
+        "Verifiziert";
+      document.getElementById("dc-text").innerHTML =  "Registriert als " + username + "#" + discriminator + "."
+      document.getElementById("dc-avatar").src =
+        "https://cdn.discordapp.com/avatars/" + id + "/" + avatar + ".png";
     })
     .catch(console.error);
 }
 
 function setProgrammName() {
-  document.getElementById("proButton").innerHTML =
-  "Verifiziert als " + proName;
+  document.getElementById("proButton").innerHTML = "Verifiziert als " + proName;
 }
