@@ -11,20 +11,6 @@
   <link href="../css/pr0grammStylesheet.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
   <style>
-    header,
-    main,
-    footer {
-      padding-left: 300px;
-    }
-
-    @media only screen and (max-width: 992px) {
-
-      header,
-      main,
-      footer {
-        padding-left: 0;
-      }
-    }
 
     a {
       color: #ee4d2e;
@@ -166,9 +152,8 @@
               </ul>
             </div>
           </li>
-          <li><a href="#regeln">Regeln</a></li>
-          <li><a href="#ansprechpartner">Ansprechpartner</a></li>
-          <li><a href="#links">Links</a></li>
+          <li><a href="#regeln" class="waves-effect waves-teal">Regeln</a></li>
+          <li><a href="#ansprechpartner" class="waves-effect waves-teal">Ansprechpartner</a></li>
         </ul>
 
   </ul>
@@ -189,15 +174,15 @@
 
 
   <!-- Content of Page -->
-  <div class="container" style="margin-left: 350px">
-    <h1 id="minecraft-server">Minecraft Server</h1>
-    <div class="divider"></div>
-    <p><strong>under construction🛠</strong></p>
+  <main>
+  <div class="container">
+    <h1 id="minecraft-server" class="center">Minecraft Server</h1>
     <h2 id="allgemein">Allgemein</h2>
     <div class="divider"></div>
+    <p><strong>under construction🛠</strong></p>
     <ul>
       <li>Version: 1.15.2</li>
-      <li>Adresse: <code>mc.z0cken.com</code></li>
+      <li>Adresse: <a>mc.z0cken.com</a></li>
     </ul>
     <h2 id="weltaufbau">Weltaufbau</h2>
     <div class="divider"></div>
@@ -415,7 +400,6 @@
     </p>
     <h2 id="verkehrsnetze">Verkehrsnetze</h2>
     <div class="divider"></div>
-    <p>Es gibt 2 Verkehrsnetze.</p>
     <h3 id="straßen">Straßen</h3>
     <p>Straßen verbinden alle Städte, Gebiete und Themen-Dörfer.</p>
     <h3 id="bahn">Bahn</h3>
@@ -428,26 +412,26 @@
       Bahnhöfe U-Bahn: Die U-Bahn befindet sich unter dem Bahnhof. Jeder
       Spieler kann sich hier nach belieben im Freebuild anschließen.
     </p>
-    <h2 id="regeln">Regeln und Bauregeln</h2>
+    <h2 id="regeln">Regeln</h2>
     <div class="divider"></div>
     <p>
       Unter /regeln und /help bauregeln findest du alles was du wissen musst.
       Folgende Dinge sind auf dem Server verboten und führen zum Bann:
     </p>
-    <ul>
-      <li>Mods und Ressourcepacks, die gezielt einen Vorteil geben</li>
-      <li>AFK Bots und Vorrichtungen</li>
-      <li>Bugusing und jegliche Beteiligung daran</li>
-      <li>Multiaccounts</li>
-      <li>Links und Inhalte mit strafrechtlich relevanten Inhalten</li>
-      <li>Ernsthafte Beleidigung</li>
-      <li>Werbung, Affiliate-Links etc.</li>
-      <li>Informationen über Privatpersonen</li>
-      <li>Gestohlene Accounts und Scamming</li>
-      <li>Sinnloses Griefen - insbesondere von Verkehrsnetzen</li>
-      <li>Gezielter Combat-Disconnect in der Metro</li>
-      <li>Maximal 2 Elytren pro Spieler</li>
-      <li>Autofarmen sind nur begrenzt erlaubt (bitte auf dem Server nachlesen)</li>
+    <ul class="point">
+      <li class="point">Mods und Ressourcepacks, die gezielt einen Vorteil geben</li>
+      <li class="point">AFK Bots und Vorrichtungen</li>
+      <li class="point">Bugusing und jegliche Beteiligung daran</li>
+      <li class="point">Multiaccounts</li>
+      <li class="point">Links und Inhalte mit strafrechtlich relevanten Inhalten</li>
+      <li class="point">Ernsthafte Beleidigung</li>
+      <li class="point">Werbung, Affiliate-Links etc.</li>
+      <li class="point">Informationen über Privatpersonen</li>
+      <li class="point">Gestohlene Accounts und Scamming</li>
+      <li class="point">Sinnloses Griefen - insbesondere von Verkehrsnetzen</li>
+      <li class="point">Gezielter Combat-Disconnect in der Metro</li>
+      <li class="point">Maximal 2 Elytren pro Spieler</li>
+      <li class="point">Autofarmen sind nur begrenzt erlaubt (bitte auf dem Server nachlesen)</li>
     </ul>
 
     <h2 id="ansprechpartner">Ansprechpartner</h2>
@@ -464,19 +448,20 @@
         <p>Builder: Steinager, Yeeziz, h0tsp0t_</p>
       </li>
     </ul>
-    <h2 id="links">Links</h2>
-    <div class="divider"></div>
-    <ul>
-      <li>
-        <p><a href="https://discord.gg/F2EeJFY">Discord</a></p>
-      </li>
-      <li><p><a href="https://z0cken.com/">Website</a></p></li>
-      <li><p><a href="https://3rbgut.de/serverkarte/">Weltkarte</a></p></li>
-    </ul>
       <!--  Scripts-->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="../js/materialize.js"></script>
       <script src="../js/minecraftScript.js"></script>
+  </div>
+  </main>
+  <footer>
+    <div class="footer-copyright" style="height: 30px;">
+      <div class="container">
+      <a class="text-primary">© 2020 z0cken.com</a>
+      <a class="text-secondary right" href="#!">Impressum</a> <a class="text-secondary right">&#160;|&#160;</a> <a href="datenschutz.html" class="text-secondary right"> Datenschutz</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
