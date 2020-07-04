@@ -30,6 +30,14 @@ a {
   color: #75c0c7;
 }
 
+.scrollspy-indent {
+  margin-left: 20px !important;
+}
+
+.pushpin {
+  right: 50px;
+}
+
 body {
   display: flex;
   min-height: 100vh;
