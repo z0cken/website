@@ -5,7 +5,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1.0"
     />
-    <title>z0cken Minecraft</title>
+    <title>z0cken Navbar</title>
 
     <!-- CSS  -->
     <link
@@ -28,11 +28,15 @@
 
   <!-- Header -->
   <body class="background-gray">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
     <nav class="background-orange" role="navigation">
       <div class="nav-wrapper container">
         <div class="row">
-          <!-- Remove in production! -->
-          <a href="" class="brand-logo version center"> - Version 0.1 - </a>
           <a href="https://www.z0cken.com" class="brand-logo">
             <img
               class="hide-on-small-only"
@@ -51,16 +55,23 @@
                 Impressum
               </a>
             </li>
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <!-- Dropdown Trigger -->
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                >Dropdown<i class="material-icons right">arrow_drop_down</i></a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- End of Header -->
 
-
-
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="./js/materialize.js"></script>
+    <script src="./js/navbarScript.js"></script>
   </body>
 </html>
