@@ -36,6 +36,52 @@ body {
   flex-direction: column;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 main {
   flex: 1 0 auto;
 }
+
+.collapsible {
+  border: none;
+}
+
+.collapsible-header, .collapsible-body {
+  border-color: black;
+}
+
+.collapsible-header i {
+  margin-left: 15%;
+}
+
+
+.wrapper {
+  height: 15vw !important;
+  width: 30vw !important;
+  overflow: hidden;
+  padding: 0px !important;
+  margin: 10px !important;
+}
+
+@media (max-width: 1369px) and (min-width: 565px){
+  .wrapper {
+    height: 20vw !important;
+    width: 40vw !important;
+  }
+}
+
+@media (max-width: 564px) {
+  .wrapper {
+    height: 40vw !important;
+    width: 80vw !important;
+  }
+}
+
