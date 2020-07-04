@@ -35,7 +35,8 @@ a {
 }
 
 .pushpin {
-  right: 50px;
+  right: 0px;
+  width: 140px;
 }
 
 body {
