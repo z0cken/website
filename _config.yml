@@ -1,8 +1,8 @@
 
 title: z0cken
 description: Gaming für Fette
-baseurl: "/website-test" # the subpath of your site, e.g. /blog
-url: "http://z0cken.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/website"
+url: "http://z0cken.github.io"
 github_username:  z0cken
 
 # Build settings
