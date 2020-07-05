@@ -24,23 +24,52 @@
       >
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/index.html">Übersicht</a></li>
-        <li><a href="https://discord.com/invite/F2EeJFY">Discord</a></li>
+        <li>
+          <a target="_blank" href="https://discord.com/invite/F2EeJFY"
+            >Discord</a
+          >
+        </li>
         <li><a href="/verification/index.html">Verify</a></li>
       </ul>
     </div>
     <div class="nav-content right">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="/minecraft/index.html">Minecraft</a></li>
-        <li class="tab"><a href="/lebenimholz/index.html">Leben Im Holz</a></li>
-        <li class="tab"><a href="/terraria">Terraria</a></li>
-        <li class="tab"><a href="/404">Pimmel</a></li>
+      <ul class="tabs no-autoinit tabs-transparent">
+        <li class="tab">
+          <a target="_self" id="minecraft" href="/minecraft/index.html"
+            >Minecraft</a
+          >
+        </li>
+        <li class="tab">
+          <a target="_self" id="lebenimholz" href="/lebenimholz/index.html"
+            >Leben Im Holz</a
+          >
+        </li>
+        <li class="tab">
+          <a target="_self" id="event" href="/event/index.html">Event</a>
+        </li>
+        <li class="tab">
+          <a target="_self" id="404" href="/404">Pimmel</a>
+        </li>
       </ul>
     </div>
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">JavaScript</a></li>
+    <li><a href="/index.html">Übersicht</a></li>
+    <li>
+      <a target="_blank" href="https://discord.com/invite/F2EeJFY">Discord</a>
+    </li>
+    <li><a href="/verification/index.html">Verify</a></li>
   </ul>
 </div>
+
+<script>
+  var elements = [...document.querySelectorAll(".tab a")];
+  var names = elements.map(el => el.id)
+  for (pos = 0 ; pos < elements.length; pos++) {
+    if (location.pathname.includes(names[pos])) {
+      elements[pos].classList.add("active");
+      document.getElementsByClassName("no-autoinit")[0].classList.remove("no-autoinit")
+    }
+  }
+</script>
