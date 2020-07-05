@@ -1,0 +1,76 @@
+/* Concept CSS */
+a {
+  color: #ee4d2e;
+}
+
+p {
+  color: #f2f5f4;
+}
+
+h1 {
+  color: #f2f5f4;
+}
+
+h2 {
+  color: #f2f5f4;
+}
+
+h3 {
+  color: #f2f5f4;
+}
+
+li {
+  color: #f2f5f4;
+}
+
+th {
+  color: #f2f5f4;
+}
+
+td {
+  color: #f2f5f4;
+}
+
+.scrollspy-indent {
+  margin-left: 20px !important;
+}
+
+.pushpin {
+  right: 0px;
+  width: 140px;
+}
+
+/* Gallery Style */
+.collapsible {
+  border: none;
+}
+
+.collapsible-header, .collapsible-body {
+  border-color: black;
+}
+
+.collapsible-header i {
+  margin-left: 15%;
+}
+
+.wrapper {
+  height: 15vw !important;
+  width: 30vw !important;
+  overflow: hidden;
+  padding: 0px !important;
+  margin: 10px !important;
+}
+
+@media (max-width: 1369px) and (min-width: 565px){
+  .wrapper {
+    height: 20vw !important;
+    width: 40vw !important;
+  }
+}
+
+@media (max-width: 564px) {
+  .wrapper {
+    height: 40vw !important;
+    width: 80vw !important;
+  }
+}
