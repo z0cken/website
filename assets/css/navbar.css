@@ -1,0 +1,6 @@
+.btn:focus,
+.btn-large:focus,
+.btn-small:focus,
+.btn-floating:focus {
+  background-color: #161618 ;
+}

@@ -5404,7 +5404,7 @@ small {
 .btn:hover,
 .btn-large:hover,
 .btn-small:hover {
-  background-color: #2bbbad;
+  background-color: #ee4d2e;
 }
 
 .btn-floating {
@@ -5417,7 +5417,7 @@ small {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: #ee4d2e;
   border-radius: 50%;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -5426,7 +5426,7 @@ small {
 }
 
 .btn-floating:hover {
-  background-color: #26a69a;
+  background-color: #ee4d2e;
 }
 
 .btn-floating:before {
