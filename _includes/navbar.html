@@ -22,6 +22,7 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"
         ><i class="material-icons">menu</i></a
       >
+      <!-- Navbar - Copy to Sidenav  [1] -->
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/index.html">Übersicht</a></li>
         <li>
@@ -31,9 +32,11 @@
         </li>
         <li><a href="/verification/index.html">Verify</a></li>
       </ul>
+      <!-- End of Navbar -->
     </div>
-    <div class="nav-content right">
+    <div class="nav-content hide-on-med-and-down right">
       <ul class="tabs no-autoinit tabs-transparent">
+        <!-- Tabslist - Copy to Sidenav [2] -->
         <li class="tab">
           <a target="_self" id="minecraft" href="/minecraft/index.html"
             >Minecraft</a
@@ -48,28 +51,85 @@
           <a target="_self" id="event" href="/event/index.html">Event</a>
         </li>
         <li class="tab">
-          <a target="_self" id="404" href="/404">Pimmel</a>
+          <a target="_self" id="CSGO" href="/CSGO">CS:GO</a>
         </li>
+        <li class="tab">
+          <a target="_self" id="terraria" href="/terraria">Terraria</a>
+        </li>
+        <li class="tab">
+          <a target="_self" id="elitedangerous" href="/elitedangerous">Elite Dangerous</a>
+        </li>
+        <li class="tab">
+          <a target="_self" id="starcitizen" href="/starcitizen">Star Citizen</a>
+        </li>
+        <li class="tab">
+          <a target="_self" id="garrysmod" href="/garrysmod">Garry's Mod</a>
+        </li>
+        <li class="tab">
+          <a target="_self" id="teamfortress" href="/teamfortress">Team Fortress</a>
+        </li>
+        <!-- End of Tabslist -->
       </ul>
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
+  <!-- Sidenav -->
+  <ul class="sidenav background-gray text-primary" id="mobile-demo">
+
+    <!-- Insert here from Navbar [1] -->
     <li><a href="/index.html">Übersicht</a></li>
     <li>
       <a target="_blank" href="https://discord.com/invite/F2EeJFY">Discord</a>
     </li>
     <li><a href="/verification/index.html">Verify</a></li>
+
+    <li><div class="divider"></div></li>
+    <div class="text-secondary">
+      <!-- Insert here from Navbar [2] -->
+      <li class="tab">
+        <a target="_self" id="minecraft" href="/minecraft/index.html"
+          >Minecraft</a
+        >
+      </li>
+      <li class="tab">
+        <a target="_self" id="lebenimholz" href="/lebenimholz/index.html"
+          >Leben Im Holz</a
+        >
+      </li>
+      <li class="tab">
+        <a target="_self" id="event" href="/event/index.html">Event</a>
+      </li>
+      <li class="tab">
+        <a target="_self" id="CSGO" href="/CSGO">CS:GO</a>
+      </li>
+      <li class="tab">
+        <a target="_self" id="terraria" href="/terraria">Terraria</a>
+      </li>
+      <li class="tab">
+        <a target="_self" id="elitedangerous" href="/elitedangerous">Elite Dangerous</a>
+      </li>
+      <li class="tab">
+        <a target="_self" id="starcitizen" href="/starcitizen">Star Citizen</a>
+      </li>
+      <li class="tab">
+        <a target="_self" id="garrysmod" href="/garrysmod">Garry's Mod</a>
+      </li>
+      <li class="tab">
+        <a target="_self" id="teamfortress" href="/teamfortress">Team Fortress</a>
+      </li>
+    </div>
   </ul>
 </div>
 
 <script>
   var elements = [...document.querySelectorAll(".tab a")];
-  var names = elements.map(el => el.id)
-  for (pos = 0 ; pos < elements.length; pos++) {
+  var names = elements.map((el) => el.id);
+  for (pos = 0; pos < elements.length; pos++) {
     if (location.pathname.includes(names[pos])) {
       elements[pos].classList.add("active");
-      document.getElementsByClassName("no-autoinit")[0].classList.remove("no-autoinit")
+      document
+        .getElementsByClassName("no-autoinit")[0]
+        .classList.remove("no-autoinit");
     }
   }
 </script>

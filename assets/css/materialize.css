@@ -5037,7 +5037,7 @@ small {
 .card
   .card-action
   a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #ffab40;
+  color: #ee4d2e;
   margin-right: 24px;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;

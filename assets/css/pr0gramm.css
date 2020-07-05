@@ -22,12 +22,24 @@
   color: #f2f5f4;
 }
 
+.text-primary li a {
+  color: #f2f5f4;
+}
+
 .text-secondary {
+  color: #888888;
+}
+
+.text-secondary li a {
   color: #888888;
 }
 
 a {
   color: #75c0c7;
+}
+
+.sidenav-overlay {
+  background-color: rgba(250, 251, 252, 0.1) !important;
 }
 
 body {
