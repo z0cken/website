@@ -135,3 +135,25 @@ function sendRequest() {
     })
   );
 }
+
+
+var open = false;
+unloadcooldown = function(e) {
+  open = true;
+  setTimeout(() => {
+    open = false;
+  }, 1);
+}
+
+document.getElementById("dc-button").addEventListener("click", unloadcooldown)
+document.getElementById("pro-button").addEventListener("click", unloadcooldown)
+
+
+window.onbeforeunload = function(e) {
+  if (!this.open) {
+    console.log(e)
+    e.preventDefault()
+    return 'ACHTUNG: Danach ist dein Fortschritt verloren.';
+  }
+};
+
