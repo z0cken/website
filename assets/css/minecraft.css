@@ -35,17 +35,29 @@ td {
   margin-left: 20px !important;
 }
 
-.pushpin {
-  right: 0px;
-  width: 140px;
+.scrollspy-hide{
+  display: none;
 }
+
+@media (min-height: 870px) {
+  .scrollspy-hide {
+    display: inline-block;
+  }
+}
+
+.pushpin-spacer {
+  margin-top: 170px
+}
+
+
 
 /* Gallery Style */
 .collapsible {
   border: none;
 }
 
-.collapsible-header, .collapsible-body {
+.collapsible-header,
+.collapsible-body {
   border-color: black;
 }
 
@@ -61,7 +73,7 @@ td {
   margin: 10px !important;
 }
 
-@media (max-width: 1369px) and (min-width: 565px){
+@media (max-width: 1369px) and (min-width: 565px) {
   .wrapper {
     height: 20vw !important;
     width: 40vw !important;
