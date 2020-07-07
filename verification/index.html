@@ -19,7 +19,7 @@ layout: default
   <div class="container">
     <div class="section">
       <div class="row">
-        <div class="col l6 s12 m6">
+        <div class="col l6 m12 s12">
           <div class="card center">
             <div class="card-content">
               <span class="card-title">
@@ -28,33 +28,29 @@ layout: default
                     class="responsive-img circle"
                     id="pro-avatar"
                     width="50"
-                    src="../resources/pr0gramm.png"
+                    src="{{ site.baseurl }}/resources/pr0gramm.png"
                   />
                 </div>
                 <div>
                   pr0gramm
                 </div>
               </span>
-              <p>Verifiziere deinen pr0gramm Account</p>
+              <p id="pro-text">Verifiziere deinen pr0gramm Account</p>
             </div>
-            <div class="card-action">
-              <button
-                large
+            <div class="card-action center">
+              <a
                 class="btn disabled background-orange waves-effect waves-light"
                 type="submit"
                 name="action"
                 id="pro-button"
               >
                 Lade...
-                <div id="proLoad" class="progress">
-                  <div class="indeterminate"></div>
-                </div>
-              </button>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="col l6 s12 m6">
+        <div class="col l6 m12 s12">
           <div class="card center">
             <div class="card-content">
               <span class="card-title">
@@ -63,7 +59,7 @@ layout: default
                     class="responsive-img circle"
                     id="dc-avatar"
                     width="50"
-                    src="../resources/discord.png"
+                    src="{{ site.baseurl }}/resources/discord.png"
                   />
                 </div>
                 <div>
@@ -85,15 +81,51 @@ layout: default
           </div>
         </div>
       </div>
-      <div class="center">
-        <a
-          class="btn background-orange waves-effect waves-light"
-          type="submit"
-          name="action"
-          id="request-button"
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal no-autoinit">
+    <div class="container" id="modal-loading-content">
+      <div class="modal-content">
+        <br />
+        <h4 class="header center text-secondary">
+          Verifiziere deinen Account
+        </h4>
+        <h6 class="header center text-secondary">
+          Bitte warten...
+        </h6>
+        <br />
+        <br />
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >Abbrechen</a
         >
-          Send Request
-        </a>
+      </div>
+    </div>
+    <div class="hide container" id="modal-recieved-content">
+      <div class="modal-content">
+        <br />
+        <h4 id="modal-response-header" class="header center text-secondary">
+          Erfolgreich verifiziert!
+        </h4>
+        <h6 id="modal-response-text" class="header center text-secondary"></h6>
+        <br />
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >Schliesen</a
+        >
+        <a
+          class="btn background-discord"
+          target="_blank"
+          href="https://discord.com/invite/F2EeJFY"
+          >Zum Discord <i class="material-icons right">send</i></a
+        >
       </div>
     </div>
   </div>
