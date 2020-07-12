@@ -1,8 +1,8 @@
-var botDomain = "http://localhost:8080";
+var botDomain = "https://localhost:8080";
 var proClientID = 456;
 
 var discordLink =
-  "https://discord.com/api/oauth2/authorize?client_id=703946237291790356&redirect_uri=https%3A%2F%2Fz0cken.github.io%2Fwebsite%2Fverification%2F&response_type=token&scope=identify&state=#";
+  "https://discord.com/api/oauth2/authorize?client_id=703946237291790356&redirect_uri=http%3A%2F%2F127.0.0.1%3A4000%2Fwebsite%2Fverification%2F&response_type=token&scope=identify&state=#";
 var programmLink = "https://pr0gramm.com/auth/z0cken/#?clientID=" + proClientID;
 
 var discordToken;

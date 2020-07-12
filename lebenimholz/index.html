@@ -2,25 +2,27 @@
 layout: default
 ---
 
-<!-- IMPORTANT: pr0gramm.css & materialize.css/js are included -->
-
-<!-- Use for custom styles -->
-<!--
-<link
-  href="/assets/css/CUSTOM_STYLE.css"
-  type="text/css"
-  rel="stylesheet"
-  media="screen,projection"
-/>
--->
-
 <main class="text-primary">
-
-
-  Content goes here! 
-
-  <!-- Use for custom scripts -->
-  <!--
-  <script src="/assets/js/CUSTOM_SCRIPT.js"></script>
-  -->
+  <br/>
+  <div class="col container">
+    <h3>Beiträge - Leben im Holz</h3>
+    {% for post in site.categories.lebenimholz %}
+    <div class="card post-card background-gebannt darken-1">
+      <div class="card-content white-text">
+        <span class="card-title"
+          >{{ post.title }} {% for tag in post.tags %}
+          <span class="new background-orange badge">{{tag}}</span>
+          {% endfor %}
+        </span>
+        <p>{{ post.excerpt | strip_html  }}</p>
+      </div>
+      <div class="card-action text-primary">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          Zum Beitrag
+        </a>
+        <span class="badge">vom {{post.date | date: '%d.%m.%Y'}}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </main>

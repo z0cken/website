@@ -2,8 +2,17 @@
 <html lang="en">
   {% include header.html %}
   <body class="background-gray">
-    {% include navbar.html %} 
-    {{ content }} 
-    {% include footer.html %}
+    {% include navbar.html %} {%assign last = page.url | slice: -1, 1 %} {%if
+    last != "/"%} {%assign category = page.path | split: '/'%}
+    <a
+      class="btn-flat text-secondary"
+      href="{{site.baseurl}}/{{category[0]}}"
+      type="submit"
+      name="action"
+    >
+      <i class="material-icons left">keyboard_backspace</i>
+      Zurück zur Organisation
+    </a>
+    {%endif%} {{ content }} {% include footer.html %}
   </body>
 </html>

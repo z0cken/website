@@ -1,0 +1,397 @@
+---
+layout: default
+---
+
+<!-- Use pr0gramm.css / minecraft.css classes for coloring -->
+<link
+  href="{{ site.baseurl }}/assets/css/minecraft.css"
+  type="text/css"
+  rel="stylesheet"
+  media="screen,projection"
+/>
+
+<!-- Content of Page -->
+<main>
+  <div class="row">
+    <div class="col s10 offset-s1 l8 offset-l2">
+      <h1 id="minecraft-server" class="center">Minecraft Server</h1>
+      <div id="allgemein" class="section scrollspy">
+        <h2 id="allgemein">
+          Allgemein
+        </h2>
+        <div class="divider"></div>
+      </div>
+      <div id="weltaufbau" class="section scrollspy">
+        <h2>Weltaufbau</h2>
+        <div class="divider"></div>
+        <h3 id="städte" class="scrollspy">Städte</h3>
+        <p>
+          In der 11.000 x 11.000 Blöcke großen Welt gibt es 9 Städte und
+          Gebiete. Die 3 Städte bilden die Hauptstadt Gamberg, Mittelalterstadt
+          Erbgut und Darmstadt. Die weiteren Gebiete in der Hauptstadt sind der
+          Hobbitberg und das Luxusviertel. Ebenfalls gibt es 4 weitere
+          Themendörfer.
+        </p>
+        <h3 id="themendörfer">Themendörfer</h3>
+        <p>
+          Die vier Themendörfer sind das Farmerdorf, Minerdorf, Jägerdorf und
+          Fischerdorf. In jedem der vier Dörfer findest du Quests. Nachdem du
+          zum ersten mal ein Dorf entdeckt hast, kannst du dich per Portal in
+          Gamberg dort hin teleportieren.
+        </p>
+        <h3 id="grundstücke">Grundstücke</h3>
+        <p>
+          Grundstücke findest du in jeder Stadt, sie sind weiß umrandet. Mit
+          /gsclaim beanspruchst du es für dich und mit /gsfreigeben wirst du es
+          los. Du kannst maximal 3 Grundstücke Global besitzen
+        </p>
+        <h3 id="steinbruch-und-baggersee">Steinbruch und Baggersee</h3>
+        <p>
+          Den Steinbruch und Baggersee findest du in Gamberg. Diese lassen sich
+          per Kompass anpeilen. Im Baggersee findest du Kies, Sand, Erde, Ton
+          und seltene Schätze. Im Steinbruch gibt es jede art der Steine und
+          Erze wie Kohle, Eisen und mehr.
+        </p>
+        <h3 id="freebuild">Freebuild</h3>
+        <p>
+          Mit dem Befehl /wild landest du im Freebuild. Hier kannst du tun und
+          lassen was du willst, solange es Regelkonform ist. Deine Sachen sind
+          hier aber ungeschützt und können nur per Claim gesichert werden
+        </p>
+        <h3 id="claims">Claims</h3>
+        <p>
+          Claims kannst du nutzen um im Freebuild dein Eigentum zu sichern.
+          Claimblöcke (End-Portal-Rahmen) erhältst du bei Günther im Rathaus per
+          Quest. Unter /help claims findest du weitere Hilfe.
+        </p>
+      </div>
+      <div id="welten" class="section scrollspy">
+        <h2 id="welten">Welten</h2>
+        <div class="divider"></div>
+        <h3 id="nether">Nether</h3>
+        <p>
+          Ab der 1.16 wird es eine Nether Farmwelt und einen Freebuild Nether
+          geben. Die Nether Farmwelt wird erweitert oder zurückgesetzt. im
+          Freebuild Nether könnt ihr Claims setzen und bauen. Portale aus dem
+          Freebuild Nether werden 1:1 in die Overworld generiert.Hier kann kein
+          Home gesetzt werden. Wither lassen sich nur im Nether spawnen
+        </p>
+        <h3 id="end">End</h3>
+        <p>
+          Der Enderdrache lässt sich immer wieder neu spawnen. Das End wird je
+          nach Bedarf erweitert oder zurückgesetzt. Elytren sind hier nicht
+          nutzbar. Hier kann kein Home gesetzt werden.
+        </p>
+        <h3 id="farmwelt">Farmwelt</h3>
+        <p>
+          Die Farmwelt wird zurückgesetzt und erweitert. Hier kann nicht
+          geclaimt werden und auch kein Home gesetzt werden.
+        </p>
+      </div>
+      <div id="features" class="section scrollspy">
+        <h2 id="features">Features</h2>
+        <div class="divider"></div>
+        <h3 id="homes">Homes</h3>
+        <p>
+          Du startest mit einem Home. Du setzt es mit /sethome “Name” und löscht
+          es mit /delhome “Name”. Bei Günther im Rathaus kannst du per Quest
+          mehr Homes erhalten. Homes sind nur in der Overworld verfügbar.
+        </p>
+        <h3 id="skills">Skills</h3>
+        <p>
+          Das MCMMO Plugin fügt Skills ein. Umso mehr ihr spielt umso besser
+          werden eure Skills. Mit steigendem Skill verbessern sich eure
+          Fähigkeiten. Mit /mcstats werden dir deine Skills angezeigt. Mit
+          /akrobatik wird dir dein Akrobatik Skill angezeigt. /Mctop zeigt dir
+          die Top Spieler Mit einem Linksklick (bzw. Schleichen + Linksklick
+          wenn du ein Item in der zweiten Hand hast) und dem passenden Werkzeug
+          aktivierst du dein Spezialskill. Liste aller Skills: Akrobatik,
+          Schwertkampf, Axtkampf, Faustkampf, Bogenschießen, Kräuterkunde,
+          Angeln, Graben, Bergbau
+        </p>
+        <h3 id="skilltage">Skilltage</h3>
+        <p>
+          Beim Portalhaus am Spawn werden dir die täglichen Skills angezeigt Je
+          nach Skilltag werden 2 Skills geboosted. Du erhälst also durch Leveln
+          mehr XP und steigst schneller auf.
+        </p>
+        <p>Skilltage:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Skill 1</th>
+              <th>Skill 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Montag</strong></td>
+              <td>Akrobatik</td>
+              <td>Schwertkampf</td>
+            </tr>
+            <tr>
+              <td><strong>Dienstag</strong></td>
+              <td>Angeln</td>
+              <td>Axtkampf</td>
+            </tr>
+            <tr>
+              <td><strong>Mittwoch</strong></td>
+              <td>Bergbau</td>
+              <td>Bogenschießen</td>
+            </tr>
+            <tr>
+              <td><strong>Donnerstag</strong></td>
+              <td>Kräuterkunde</td>
+              <td>Faustkampf</td>
+            </tr>
+            <tr>
+              <td><strong>Freitag</strong></td>
+              <td>Graben</td>
+              <td>Akrobatik</td>
+            </tr>
+            <tr>
+              <td><strong>Samstag</strong></td>
+              <td>Bergbau</td>
+              <td>Bogenschießen</td>
+            </tr>
+            <tr>
+              <td><strong>Sonntag</strong></td>
+              <td>Angeln</td>
+              <td>Faustkampf</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="metro">Metro</h3>
+        <p>
+          Die Metro ist ein Adventurebereich für erfahrene Spieler. Sie besteht
+          aus 7 zerstörten Stationen in denen sich Beacons befinden. Als Spieler
+          muss man diese Beacons mit Lapis Lazuli befüllen um den Beacon
+          aufrecht zu erhalten. Die 7 Stationen entleeren sich langsam. Umso
+          mehr Stationen befüllt sind, umso bessere Effekte erhälst du als
+          Spieler. Ist die Metro aber leer, verschwinden die Effekte. Den
+          Metro-Eingang findest du im Hauptbahnhof in Gamberg Für eine Metromap,
+          nimmst du eine Karte in die Hand und führst den Befehl /metro map aus
+          /metro zeigt dir den Status der Metro an /metro top zeigt die besten
+          Spieler der Metro an.
+        </p>
+        <h3 id="musiktickets">Musiktickets</h3>
+        <p>
+          Es gibt 13 verschiedene Musiktickets die du angeln kannst. Um Musik zu
+          hören, nimmst du es in die Hand und dann Rechtsklick auf eine Jukebox.
+        </p>
+        <h3 id="hartgeld">Hartgeld</h3>
+        <p>
+          Bei einem Händler im Golfclub im Luxusgebiet kannst du Schallplatten
+          gegen Hartgeld handeln. Aus Hartgeld kannst du Goldbarren craften oder
+          du tauschst es gegen Musiktickets. Hartgeld ist keine offizielle
+          Währung.
+        </p>
+        <h3 id="enderaugen">Enderaugen</h3>
+        <p>
+          Nutze Enderaugen mit Rechtsklick um für 7 Sekunden den “glowing”
+          Effekt auf Mobs anzuwenden.
+        </p>
+        <h3 id="xp-flaschen">XP-Flaschen</h3>
+        <p>
+          Um deine XP in Flaschen zu füllen, musst du mit Rechtsklick und mit
+          einer Glasflasche in der Hand auf einen Zaubertisch klicken.
+          Schleichst du dabei, machst du direkt 16 Flaschen auf einmal.
+        </p>
+      </div>
+      <div id="quests" class="section scrollspy">
+        <h2 id="quests">Quests</h2>
+        <div class="divider"></div>
+        <p>
+          Überall auf der Karte sind Quests verteilt. Diese erkennst du daran,
+          dass über ihnen ein Namen fliegt. Sprich sie einfach per Rechtsklick
+          an. Die blaue Schrift lässt sich anklicken. Mit /j erhälst du dein
+          Tagebuch. Mit /backpack öffnet sich dein Rucksack indem du
+          ausschließlich Questitems lagern kannst. Hier kannst du Quests auch
+          abbrechen.
+        </p>
+        <p>Liste aller Quests:</p>
+        <ul>
+          <li>
+            Gamberg: Sekretär Günther, Bürgermeister Steinhoff, Tutorial,
+            Metro-Zuständiger Vladimir, Gernod der Baumeister und Hartmut
+            Hautdrauf, Oliver der Gräber, den Farmer Manfred und Blumenfrau
+            Stephanie
+          </li>
+          <li>Erbgut: Rattenfänger Egon Spengler und Pfarrer Albert</li>
+          <li>Minerdorf: Miner Gunther Tage und der Fremde Helmuth</li>
+          <li>
+            Fischerdorf: Rebron der Fischer, den Tod, Edmund van Dickinson und
+            sein Kollege Oswald, Tjark der Fischverkäufter, den gierigen Händler
+            Gibmir al Deingeld und den Schmied Rebron
+          </li>
+          <li>Im Farmer- und Jägerdorf gibt es noch keine Quests.</li>
+        </ul>
+      </div>
+      <div id="handel" class="section scrollspy">
+        <h2 id="handel">Handel</h2>
+        <div class="divider"></div>
+        <h3 id="servershops">Servershops</h3>
+        <p>
+          In allen Themendörfer findest du Dorfbewohner die jegliche Items mit
+          dir unbegrent Handeln.
+        </p>
+        <h3 id="spielershops">Spielershops</h3>
+        <p>
+          Jeder Spieler kann, sofern er ein Villager-Spawnei besitzt, einen Shop
+          am Marktplatz in Gamberg oder Erbgut spawnen. Dieses Spawnei erklärt
+          sich selbst sobald du es in der Hand hast. Diese Spawneier erhaltet
+          ihr bei Events. Dein Shop löscht sich automatisch nach 40 Tagen
+          Inaktivität und deine Kiste mit Loot wird für andere Spieler
+          freigegeben. Per Rechtsklick auf eine Kiste mit dem Villager-Spawnei
+          erstellst du den Shop und mit Schleichen + Rechtsklick lässt sich dein
+          Shop konfigurieren.
+        </p>
+      </div>
+      <div id="verkehrsnetze" class="section scrollspy">
+        <h2 id="verkehrsnetze">Verkehrsnetze</h2>
+        <div class="divider"></div>
+        <h3 id="straßen">Straßen</h3>
+        <p>Straßen verbinden alle Städte, Gebiete und Themen-Dörfer.</p>
+        <h3 id="bahn">Bahn</h3>
+        <p>
+          In jeder Stadt und in jedem Themendorf gibt es ein Bahnhof den ihr vom
+          Hauptbahnhof in Gamberg erreicht. Die Grüne Linie zeigt die Ringbahn.
+          Die Gelbe Linie verbindet alle Städte und Themendörfer Jeder Spieler
+          kann sich nach Absprache mit der Moderation an die Strecke
+          anschließen. Die Hauptstrecke muss jedoch durchgängig sein Rote und
+          Blaue Punkte sind Bahnhöfe U-Bahn: Die U-Bahn befindet sich unter dem
+          Bahnhof. Jeder Spieler kann sich hier nach belieben im Freebuild
+          anschließen.
+        </p>
+      </div>
+      <div id="regeln" class="section scrollspy">
+        <h2 id="regeln">Regeln</h2>
+        <div class="divider"></div>
+        <p>
+          Unter /regeln und /help bauregeln findest du alles was du wissen
+          musst. Folgende Dinge sind auf dem Server verboten und führen zum
+          Bann:
+        </p>
+        <ul class="point">
+          <li class="point">
+            Mods und Ressourcepacks, die gezielt einen Vorteil geben
+          </li>
+          <li class="point">AFK Bots und Vorrichtungen</li>
+          <li class="point">Bugusing und jegliche Beteiligung daran</li>
+          <li class="point">Multiaccounts</li>
+          <li class="point">
+            Links und Inhalte mit strafrechtlich relevanten Inhalten
+          </li>
+          <li class="point">Ernsthafte Beleidigung</li>
+          <li class="point">Werbung, Affiliate-Links etc.</li>
+          <li class="point">Informationen über Privatpersonen</li>
+          <li class="point">Gestohlene Accounts und Scamming</li>
+          <li class="point">
+            Sinnloses Griefen - insbesondere von Verkehrsnetzen
+          </li>
+          <li class="point">Gezielter Combat-Disconnect in der Metro</li>
+          <li class="point">Maximal 2 Elytren pro Spieler</li>
+          <li class="point">
+            Autofarmen sind nur begrenzt erlaubt (bitte auf dem Server
+            nachlesen)
+          </li>
+        </ul>
+      </div>
+      <div id="ansprechpartner" class="section scrollspy">
+        <h2 id="ansprechpartner">Ansprechpartner</h2>
+        <div class="divider"></div>
+        <p>Serverleitung:</p>
+        <ul>
+          <li>
+            <p>Administration: KingJulian13, FlareDE</p>
+          </li>
+          <li>
+            <p>Moderation: Luux, DerLukas01, Like_a_McOne</p>
+          </li>
+          <li>
+            <p>Builder: Steinager, Yeeziz, h0tsp0t_</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col s2">
+      <!-- Scrollspy -->
+      <div class="pushpin-spacer">
+        <div class="pushpin hide-on-med-and-down">
+          <ul class="section table-of-contents">
+            <li><a href="#allgemein">Allgemein</a></li>
+            <li><a href="#weltaufbau">Weltaufbau</a></li>
+            <div class="scrollspy-hide">
+              <li><a class="scrollspy-indent" href="#städte">Städte</a></li>
+              <li>
+                <a class="scrollspy-indent" href="#themendörfer"
+                  >Themendörfer</a
+                >
+              </li>
+              <li>
+                <a class="scrollspy-indent" href="#grundstücke">Grundstücke</a>
+              </li>
+              <li>
+                <a class="scrollspy-indent" href="#steinbruch-und-baggersee"
+                  >Steinbruch und Baggersee</a
+                >
+              </li>
+              <li>
+                <a class="scrollspy-indent" href="#freebuild">Freebuild</a>
+              </li>
+              <li><a class="scrollspy-indent" href="#claims">Claims</a></li>
+            </div>
+            <li><a href="#welten">Welten</a></li>
+            <div class="scrollspy-hide">
+              <li><a class="scrollspy-indent" href="#nether">Nether</a></li>
+              <li><a class="scrollspy-indent" href="#end">End</a></li>
+              <li><a class="scrollspy-indent" href="#farmwelt">Farmwelt</a></li>
+            </div>
+            <li><a href="#features">Features</a></li>
+            <div class="scrollspy-hide">
+              <li><a class="scrollspy-indent" href="#homes">Homes</a></li>
+              <li><a class="scrollspy-indent" href="#skills">Skills</a></li>
+              <li>
+                <a class="scrollspy-indent" href="#skilltage">Skilltage</a>
+              </li>
+              <li><a class="scrollspy-indent" href="#metro">Metro</a></li>
+              <li>
+                <a class="scrollspy-indent" href="#musiktickets"
+                  >Musiktickets</a
+                >
+              </li>
+              <li><a class="scrollspy-indent" href="#hartgeld">Hartgeld</a></li>
+              <li>
+                <a class="scrollspy-indent" href="#enderaugen">Enderaugen</a>
+              </li>
+              <li>
+                <a class="scrollspy-indent" href="#xp-flaschen">XP-Flaschen</a>
+              </li>
+            </div>
+            <li><a href="#quests">Quests</a></li>
+            <li><a href="#handel">Handel</a></li>
+            <div class="scrollspy-hide">
+              <li>
+                <a class="scrollspy-indent" href="#servershops">Servershops</a>
+              </li>
+              <li>
+                <a class="scrollspy-indent" href="#spielershops"
+                  >Spielershops</a
+                >
+              </li>
+            </div>
+            <li><a href="#verkehrsnetze">Verkehrsnetze</a></li>
+            <div class="scrollspy-hide">
+              <li><a class="scrollspy-indent" href="#straßen">Straßen</a></li>
+              <li><a class="scrollspy-indent" href="#bahn">Bahn</a></li>
+            </div>
+            <li><a href="#regeln">Regeln</a></li>
+            <li><a href="#ansprechpartner">Ansprechpartner</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{ site.baseurl }}/assets/js/minecraft.js"></script>
+</main>
