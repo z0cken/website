@@ -1,18 +1,20 @@
 {% for post in site.categories[include.category] %}
 <div class="card post-card background-gebannt darken-1">
   <div class="card-content white-text">
-    <span class="card-title"
-      >{{ post.title }} {% for tag in post.tags %}
-      <span class="new background-orange badge">{{tag}}</span>
+    {% for tag in post.tags %}
+      <span class="new background-orange badge" style="margin: 3px">{{tag}}</span>
       {% endfor %}
+    <span class="card-title"
+      >{{ post.title }} 
     </span>
+    
     <p>{{ post.excerpt | strip_html }}</p>
   </div>
   <div class="card-action text-primary">
     <a href="{{ site.baseurl }}{{ post.url }}">
       Zum Beitrag
     </a>
-    <span class="badge">vom {{post.date | date: '%d.%m.%Y'}}</span>
+    <span class="badge"><span class="hide-on-small-only">vom </span>{{post.date | date: '%d.%m.%Y'}}</span>
   </div>
 </div>
 {% endfor %}
