@@ -22,7 +22,7 @@ Bei eigenen Scripts und Style nutze den Namen bzw. Abkürzung der Organisation u
 
 ## Templates
 #### Websites
-Alle Seiten nutzen das `default` layout. Dadurch sind auch pr0gramm.css und Materialize.css/js eingebunden. Javascript Komponenten werden automatisch initialisiert. 
+Die index.html der Organisation nutzt das `default` layout. Weiter nutzen alle Unterseiten das layout `subpage`. Dadurch sind auch pr0gramm.css und Materialize.css/js immer eingebunden. Javascript Komponenten werden automatisch initialisiert. 
 ```
 ---
 layout: default
