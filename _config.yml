@@ -7,3 +7,4 @@ github_username:  z0cken
 
 # Build settings
 markdown: kramdown
+exclude: [readme.md]
