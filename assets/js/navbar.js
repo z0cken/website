@@ -33,7 +33,7 @@ function setNavbar(side) {
   var nav = document.getElementById("nav-mobile").classList;
   var tab = document.getElementById("tab-list").classList;
   if (side === "right") {
-    document.cookie = "swiper=right;Max-Age=31536000;path=/";
+    document.cookie = "swiper=right;Max-Age=31536000;path=/;domain=https://z0cken.com/";
     btn.remove("right");
     btn.add("left");
     nav.remove("left");
@@ -42,7 +42,7 @@ function setNavbar(side) {
     tab.add("right");
   }
   if (side === "left") {
-    document.cookie = "swiper=left;Max-Age=31536000;path=/"
+    document.cookie = "swiper=left;Max-Age=31536000;path=/;domain=https://z0cken.com/";
     btn.remove("left");
     btn.add("right");
     nav.remove("right");
