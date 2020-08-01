@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include header.html %}
+  <head>
+    {% include header.html %}
+  </head>
   <body class="background-gray">
     {% include navbar.html %} {%assign last = page.url | slice: -1, 1 %} {%if
     last != "/"%} {%assign category = page.path | split: '/'%}
-    <a
-      class="btn-flat text-secondary"
-      href="{{site.baseurl}}/{{category[0]}}"
-    >
+    <a class="btn-flat text-secondary" href="{{site.baseurl}}/{{category[0]}}">
       <i class="material-icons left">keyboard_backspace</i>
       Zurück zur Organisation
     </a>

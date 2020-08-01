@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include header.html %}
+  <head>
+    {% include header.html %}
+    <link
+      href="{{ site.baseurl }}/assets/css/post.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
   <body class="background-gray">
     {% include navbar.html %}
     <main>
       {%assign category = page.path | split: '/'%}
-        <a class="btn-flat text-secondary" href="{{site.baseurl}}/{{category[0]}}">
-          <i class="material-icons left">keyboard_backspace</i>
-          Zurück zur Organisation
-        </a>
+      <a
+        class="btn-flat text-secondary"
+        href="{{site.baseurl}}/{{category[0]}}"
+      >
+        <i class="material-icons left">keyboard_backspace</i>
+        Zurück zur Organisation
+      </a>
       <div class="container text-primary">
         <h2 class="center">{{ page.title }}</h2>
         {{ content }}

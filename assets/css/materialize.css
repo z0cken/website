@@ -2631,11 +2631,11 @@ textarea {
 
 ul:not(.browser-default) {
   padding-left: 0;
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 ul:not(.browser-default) > li {
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 a {
