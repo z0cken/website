@@ -1,11 +1,13 @@
-ul {
+/* Use .post prefix for post styling */
+
+.pots ul {
     list-style-type: circle !important;
 }
 
-li {
+.post li {
     list-style-type: circle !important;
 }
 
-a { 
+.post a { 
     color:#ee4d2e; text-decoration: underline; 
 }
