@@ -5,3 +5,7 @@ ul {
 li {
     list-style-type: circle !important;
 }
+
+a { 
+    color:#ee4d2e; text-decoration: underline; 
+}
