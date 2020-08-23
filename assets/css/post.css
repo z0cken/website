@@ -8,6 +8,14 @@
     list-style-type: circle !important;
 }
 
-.post a { 
-    color:#ee4d2e; text-decoration: underline; 
+.post a {
+    text-decoration: underline; 
+}
+.post a:hover { 
+    color:#ee4d2e !important; 
+}
+
+.post a:visited {
+    text-decoration: none;
+    color: #888888
 }

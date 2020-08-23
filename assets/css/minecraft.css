@@ -1,35 +1,19 @@
 /* Concept CSS */
 a {
-  color: #ee4d2e;
+  color: #ee4d2e ;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+th,
+td,
 p {
   color: #f2f5f4;
 }
 
-h1 {
-  color: #f2f5f4;
-}
-
-h2 {
-  color: #f2f5f4;
-}
-
-h3 {
-  color: #f2f5f4;
-}
-
-li {
-  color: #f2f5f4;
-}
-
-th {
-  color: #f2f5f4;
-}
-
-td {
-  color: #f2f5f4;
-}
 
 .scrollspy-indent {
   margin-left: 20px !important;
