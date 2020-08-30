@@ -17,7 +17,7 @@ p {
 }
 
 .point {
-  list-style-type: circle;
+  list-style-type: circle !important;
 }
 
 .scrollspy-indent {
