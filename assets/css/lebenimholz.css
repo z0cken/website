@@ -1,0 +1,82 @@
+/* Concept CSS */
+a {
+  color: #ee4d2e ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+th,
+td,
+ul,
+dl,
+p {
+  color: #f2f5f4;
+}
+
+dl > dt {
+  font-weight: bold;
+}
+
+ul.point > li,
+li.point {
+  list-style-type: circle !important;
+}
+
+.scrollspy-indent {
+  margin-left: 20px !important;
+}
+
+.scrollspy-hide{
+  display: none;
+}
+
+@media (min-height: 870px) {
+  .scrollspy-hide {
+    display: inline-block;
+  }
+}
+
+.pushpin-spacer {
+  margin-top: 170px
+}
+
+
+
+/* Gallery Style */
+.collapsible {
+  border: none;
+}
+
+.collapsible-header,
+.collapsible-body {
+  border-color: black;
+}
+
+.collapsible-header i {
+  margin-left: 15%;
+}
+
+.wrapper {
+  height: 15vw !important;
+  width: 30vw !important;
+  overflow: hidden;
+  padding: 0px !important;
+  margin: 10px !important;
+}
+
+@media (max-width: 1369px) and (min-width: 565px) {
+  .wrapper {
+    height: 20vw !important;
+    width: 40vw !important;
+  }
+}
+
+@media (max-width: 564px) {
+  .wrapper {
+    height: 40vw !important;
+    width: 80vw !important;
+  }
+}

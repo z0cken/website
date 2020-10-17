@@ -2,11 +2,83 @@
 layout: default
 ---
 
-<main class="text-primary">
-  <div class="container">
-    <br />
-    <h3>Beiträge - Leben im Holz</h3>
-    <div class="divider"></div>
-    {% include posts.html category="lebenimholz" %}
+<!-- Use pr0gramm.css / lebenimholz.css classes for coloring -->
+<link
+  href="{{ site.baseurl }}/assets/css/lebenimholz.css"
+  type="text/css"
+  rel="stylesheet"
+  media="screen,projection"
+/>
+
+<!-- Content of Page -->
+<main>
+  <div class="row">
+    <div class="col s10 offset-s1 l8 offset-l2">
+      <h1 id="minecraft-server" class="center">Leben im Holz</h1>
+      <div id="allgemein" class="section scrollspy">
+        <h2 id="allgemein">
+          Allgemein
+        </h2>
+        <div class="divider"></div>
+        <div class="row">
+          <div class="col s12 l4">
+            <div class="card background-gebannt darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Server</span>
+                <p>Minecraft Edition: Java</p>
+                <p>Minecraft Version: 1.7.10 Forge</p>
+                <br />
+                <p>Das Modpack baut auf <a href="http://www.lifeinthewoods.eu/">Life in the Woods Renaissance</a> auf und ist im <a href="https://www.technicpack.net/modpack/leben-im-holz.1699672">TechnicLauncher</a>, sowie auf <a href="https://pr0lebenimholz.github.io/wiki/index.html?page=modpack">GitHub</a> verfügbar.</p>
+              </div>
+              <div class="card-action text-primary">
+                <a href="{{site.baseurl}}/lebenimholz/konzept">Zum Konzept</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 l3">
+            <div class="card background-gebannt darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Discord</span>
+                <p>Auf unserem Discord Server findest du die Minecraft Server IP, Hilfe, wenn etwas nicht funktionieren sollte, und viele gesellige Abende.</p>
+              </div>
+              <div class="card-action text-primary">
+                <a href="https://pr0gramm.com/new/3936728:comment39260793">Invite Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 l3">
+            <div class="card background-gebannt darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Wiki</span>
+                <p>
+                  Das Nachschlagewerk zum Projekt;<br />
+                  Von generellen Infos über Crafting-Rezepte bis hin zu Ressourcen.
+                </p>
+              </div>
+              <div class="card-action text-primary">
+                <a href="https://pr0lebenimholz.github.io/wiki/">Zum Wiki</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 l2">
+            <div class="card background-gebannt darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Galerie</span>
+                <p>Ein paar Impressionen, was dich auf dem Server erwartet.</p>
+                <p>Wir freuen uns auf dich!</p>
+              </div>
+              <div class="card-action text-primary">
+                <a href="{{ site.baseurl }}/lebenimholz/galerie">Zur Galerie</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>
+        Posts
+      </h2>
+      <div class="divider"></div>
+      {% include posts.html title="Leben im Holz" category="lebenimholz" %}
+    </div>
   </div>
 </main>
